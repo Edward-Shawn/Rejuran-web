@@ -2,7 +2,7 @@
 *{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;}
 a{text-decoration: none; color: #555;}
 li{list-style: none;}
-body{position: relative; top: 0; left: 0; overflow-x: hidden;}
+html, body{position: relative; top: 0; left: 0; overflow-x: hidden;}
 
 
 .chat-icons{position: fixed; bottom: 5%; right: 20px; width: auto; height: auto; z-index: 9999;}
@@ -24,9 +24,9 @@ body{position: relative; top: 0; left: 0; overflow-x: hidden;}
 
 .login-box p{display: inline-block; color: #fff;}
 
-.join{width: 92%; margin:20px auto 0; display: flex; align-items: center; color: #fff; justify-content: space-between;}
-.join p{font-size: 14px;}
-.join a{color: #fff; margin-right: 20px; font-size: 14px; border: 1px solid #fff; padding: 5px 15px; border-radius: 50px;}
+.join{width: 92%; margin:20px auto 0; color: #fff; }
+.join p{font-size: 14px; padding-bottom: 20px;}
+.join a{display: inline-block; color: #fff; margin-right: 20px; font-size: 14px; border: 1px solid #fff; padding: 5px 15px; border-radius: 50px;}
 
 .icon-box{width: 85%; margin: auto; display: flex; align-items: center; justify-content: space-between; box-sizing: border-box; padding: 20px 0;}
 .icon-box a p{font-size: 14px; margin-top: 5px;font-weight: 500;}
@@ -100,11 +100,13 @@ header{width: 100%; height: auto;  background: #fff; position: fixed; top: 0; z-
 .select a{border-bottom: 2px solid transparent; color: #777; font-weight: 500; padding: 4px 0; background: none; outline: none; font-size: 20px; display: inline-block; margin: 20px 10px 40px;}
 
 
-.slide2{width: 40%; height: auto;}
+.slide2{width: 45%; height: auto;}
 .slide2-img{width: 100%; display:block; border: 1px solid #eee;}
 
-.tit1{font-size: 11px; font-weight: bold; color: #000;}
-.tit2{font-size: 14px; color: #000; margin-bottom: 20px;}
+.title-box{min-height: 62px; width: 100%;}
+.tit1{font-size: 10px; font-weight: bold; color: #000;}
+.tit2{font-size: 14px;  color: #000; margin-bottom: 20px;}
+
 .slide-info2 span{font-size: 14px; font-weight: 700; letter-spacing: -1px; display: inline-block; margin-bottom: 20px; color: #777;}
 
 .info-icons{display: flex;}
@@ -129,14 +131,14 @@ header{width: 100%; height: auto;  background: #fff; position: fixed; top: 0; z-
 
 .product .slide2-img{border: none;}
 
-.more-btn{text-align: center; padding: 20px 0 60px;}
+.more-btn{text-align: center; padding: 40px 0 40px;}
 .more-btn button{border: 0; background: none; outline: none; cursor: pointer;}
 .more-btn button img{height: 50px;}
 
 
 
 
-.review{background: #f9f9f9;  padding-top: 40px; padding-bottom: 20px; box-sizing: border-box;}
+.review{background: #f9f9f9; padding-bottom: 20px; box-sizing: border-box;}
 .review-slider-wrap{width: 79%;}
 .review-slider-wrap li{background: #fff; height: 450px; text-align: center; box-sizing: border-box; padding: 30px;}
 .pr-img-box{width: 200px;  height: 200px; border-radius: 50%; overflow: hidden; display: inline-flex; justify-content: center;}
