@@ -1,5 +1,25 @@
 $(document).ready(function(){
     
+    $(".top-right").click(function(){
+        $(".open-menu-bg").css('visibility','visible');
+        $(".open-menu").css('right','0');
+        $(".plus-chat").css('display','none');
+    })
+
+    $(".login-box span").click(function(){
+        $(".open-menu-bg").css('visibility','hidden');
+        $(".open-menu").css('right','-100%');
+        $(".plus-chat").css('display','block');
+    })
+
+    $('.open-menu').on('scroll touchmove mousewheel', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+    });
+      
+
+
     var didScroll;
 
     $(window).scroll(function(){
@@ -9,8 +29,6 @@ $(document).ready(function(){
             didScroll = false;
         }
     })
-
-
 
     // setInterval(function(){
     //     if(didScroll){
